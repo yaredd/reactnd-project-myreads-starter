@@ -10,7 +10,7 @@ class BookShelf extends Component {
             <div className="bookshelf">
                 <h2 className="bookshelf-title">{shelfSelector[shelf]}</h2>
                 <div className="bookshelf-books">
-                    <Books books={booksOnShelf} changeShelf={changeShelf} />
+                    <Books shelf={shelf} books={booksOnShelf} changeShelf={changeShelf} />
                 </div>
             </div>
         )
