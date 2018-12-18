@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
 import * as BooksAPI from './BooksAPI'
 import Books from './Books'
+import { Link } from 'react-router-dom'
 
 class SearchResult extends Component {
     state = {
@@ -30,7 +31,7 @@ class SearchResult extends Component {
         return (
             <div className="search-books">
             <div className="search-books-bar">
-              <button className="close-search" onClick={this.props.closeSearch}>Close</button>
+              <Link className="close-search" to='/' >Close</Link>
               <div className="search-books-input-wrapper">
                 <input type="text" placeholder="Search by subject" onChange={this.handleSearch}/>
 
